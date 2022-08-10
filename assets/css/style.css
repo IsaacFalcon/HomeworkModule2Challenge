@@ -1,0 +1,272 @@
+:root {
+    --dark: #06032e;
+    --red: #882601;
+    --bg: #a9a9a9;
+    --blue: rgb(59, 144, 255); 
+    --accent: rgb(3, 107, 107);
+    --aqua: aquamarine;
+    --shadow: rgb(219, 57, 17);
+    }
+
+body {
+    background-color: var(--bg);
+    background-image: linear-gradient(var(--accent), var(--bg));
+    font-family: 'Inter', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.myimage {
+    margin-top: 10px;
+    margin-left: 50px;
+    float: center;
+    max-height: 220px;
+    border: 5px solid var(--aqua);
+  }
+
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    background-image: url("../images/backheader2.png");
+    background-size: cover;
+    background-position: center;
+    font-size: 20px;
+    height: 150px;
+    color: var(--dark);
+    padding-bottom: 200px;
+    border: 5px solid var(--dark);
+    width: 100%;
+}
+
+.myimage {
+    margin-top: 20px;
+    max-height: 220px;
+    border: 5px solid var(--aqua);
+
+  }
+
+h1 {
+    margin-top: 20px;
+    background-color: var(--aqua);
+}
+
+.nav {
+    margin-top: 20px;
+    background-color: var(--shadow);
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+  }
+  
+  nav a {
+    color: var(--dark);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    float: right;
+  
+  }
+
+  nav a:hover {
+    background-color: var(--blue);
+    color: var(--aqua);
+  }
+
+.aboutme1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.aboutme {
+    text-align: center;
+    height: 100px;
+    width: 75%;
+    font-size: 20px;
+    color: var(--dark);
+    text-decoration: underline var(--blue);
+}
+
+
+.aboutmecontent {
+    font-size: 20px;
+    height: 300px;
+    width: 75%;
+    border: 5px solid var(--dark);
+
+}
+
+.mywork1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.work {
+    height: 100px;
+    max-width: 75%;
+    font-size: 20px;
+    color: var(--dark);
+    text-align: start;
+    text-decoration: underline var(--shadow);
+}
+
+.projectstop, .projectsbottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mainproject {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.project1, .project2, .project3, .project4 {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 40%;
+    border: 5px solid var(--aqua);
+}
+
+.vtproject {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 87%;
+    border: 5px solid var(--aqua);
+}
+
+.vtproject {
+    background-image: url("../images/refractorproject.jpg");
+    
+}
+
+.vtproject h3 {
+    font-size: 24px;
+    color: var(--dark);
+    background-color: var(--aqua);
+}
+
+.vtproject:hover {
+    opacity: 50%;
+    color: var(--accent);
+    border: 5px solid var(--blue);
+}
+
+.project1 {
+    background-image: url("../images/java.JPG");
+    
+}
+
+.project1 h3 {
+    font-size: 24px;
+    color: var(--dark);
+    background-color: var(--aqua);
+}
+
+.project1:hover {
+    opacity: 50%;
+    color: var(--accent);
+    border: 5px solid var(--blue);
+}
+
+.project2 {
+    background-image: url("../images/fil.png");
+}
+
+.project2:hover {
+    opacity: 50%;
+    color: var(--accent);
+    border: 5px solid var(--blue);
+}
+
+.project2 h3 {
+    font-size: 24px;
+    color: var(--dark);
+    background-color: var(--aqua);
+}
+
+.project3 {
+    background-image: url("../images/placeholder.gif");
+}
+
+.project3:hover {
+    opacity: 50%;
+    color: var(--accent);
+    border: 5px solid var(--blue);
+}
+
+.project3 h3 {
+    font-size: 24px;
+    color: var(--dark);
+    background-color: var(--aqua);
+}
+
+.project4 {
+    background-image: url("../images/placeholder2.gif");
+}
+
+.project4:hover {
+    opacity: 50%;
+    color: var(--accent);
+    border: 5px solid var(--blue);
+}
+
+.project4 h3 {
+    font-size: 24px;
+    color: var(--dark);
+    background-color: var(--aqua);
+}
+
+.contactme {
+   display: flex;
+   flex-direction: column;
+    background: var(--shadow);
+    color: var(--dark);
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    background: var(--blue);
+    height: 100px;
+    width: 100%;
+}
+
+@media screen and (max-width:750px) {
+    .projectstop, .projectsbottom {
+       flex-direction: column;
+    }
+
+    .project1, 
+    .project2, 
+    .project3, 
+    .project4,
+    .aboutmecontent,
+    .vtproject {
+       width: 100%;
+    }  
+    
+}
