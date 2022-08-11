@@ -211,7 +211,7 @@ h1 {
     width: 100%;
 }
 
-   /* Settings for when screen hits 750px for good responsiveness */
+   /* Settings for when screen hits 1230px for good responsiveness */
 @media screen and (max-width:1230px) {
     .projectstop, .projectsbottom {
        flex-direction: column;
