@@ -8,6 +8,7 @@
     --shadow: rgb(219, 57, 17);
     }
 
+    /* Starting colors, fonts, and positioning */
 body {
     background-color: var(--bg);
     background-image: linear-gradient(var(--accent), var(--bg));
@@ -16,6 +17,7 @@ body {
     margin-right: 20px;
 }
 
+   /* positioning, size and coloring for header section and image */
 .myimage {
     margin-top: 10px;
     margin-left: 50px;
@@ -39,18 +41,12 @@ body {
     width: 100%;
 }
 
-.myimage {
-    margin-top: 20px;
-    max-height: 220px;
-    border: 5px solid var(--aqua);
-
-  }
-
 h1 {
     margin-top: 20px;
     background-color: var(--aqua);
 }
 
+   /* nav bars coloring, sizes and positioning */
 .nav {
     margin-top: 20px;
     background-color: var(--shadow);
@@ -71,12 +67,14 @@ h1 {
   
   }
 
+   /* hover coloring for nav bar */
   nav a:hover {
     background-color: var(--blue);
     color: var(--aqua);
   }
 
-.aboutme1 {
+  /* positioning, size and coloring for About Me section */
+.aboutme1, .mywork1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,7 +92,6 @@ h1 {
     text-decoration: underline var(--blue);
 }
 
-
 .aboutmecontent {
     font-size: 20px;
     height: 300px;
@@ -103,14 +100,7 @@ h1 {
 
 }
 
-.mywork1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
+   /* positioning, size and coloring for My Work section */
 .work {
     height: 100px;
     max-width: 75%;
@@ -120,7 +110,9 @@ h1 {
     text-decoration: underline var(--shadow);
 }
 
-.projectstop, .projectsbottom {
+   /* Positioning for Main Project, top 2 projects and bottom 2 projects containers*/
+.projectstop, 
+.projectsbottom {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -137,8 +129,12 @@ h1 {
     margin-bottom: 20px;
 }
 
-
-.project1, .project2, .project3, .project4 {
+   /* Sizing, coloring, and background picture settings */
+.project1, 
+.project2, 
+.project3, 
+.project4, 
+.vtproject {
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -146,96 +142,52 @@ h1 {
     border: 5px solid var(--aqua);
 }
 
-.vtproject {
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 87%;
-    border: 5px solid var(--aqua);
-}
 
-.vtproject {
-    background-image: url("../images/refractorproject.jpg");
-    
-}
-
-.vtproject h3 {
-    font-size: 24px;
-    color: var(--dark);
-    background-color: var(--aqua);
-}
-
-.vtproject:hover {
-    opacity: 50%;
-    color: var(--accent);
-    border: 5px solid var(--blue);
-}
-
-.project1 {
-    background-image: url("../images/java.JPG");
-    
-}
-
-.project1 h3 {
-    font-size: 24px;
-    color: var(--dark);
-    background-color: var(--aqua);
-}
-
-.project1:hover {
-    opacity: 50%;
-    color: var(--accent);
-    border: 5px solid var(--blue);
-}
-
-.project2 {
-    background-image: url("../images/fil.png");
-}
-
-.project2:hover {
-    opacity: 50%;
-    color: var(--accent);
-    border: 5px solid var(--blue);
-}
-
-.project2 h3 {
-    font-size: 24px;
-    color: var(--dark);
-    background-color: var(--aqua);
-}
-
-.project3 {
-    background-image: url("../images/placeholder.gif");
-}
-
-.project3:hover {
-    opacity: 50%;
-    color: var(--accent);
-    border: 5px solid var(--blue);
-}
-
-.project3 h3 {
-    font-size: 24px;
-    color: var(--dark);
-    background-color: var(--aqua);
-}
-
-.project4 {
-    background-image: url("../images/placeholder2.gif");
-}
-
-.project4:hover {
-    opacity: 50%;
-    color: var(--accent);
-    border: 5px solid var(--blue);
-}
-
+.vtproject h3, 
+.project1 h3, 
+.project2 h3, 
+.project3 h3, 
 .project4 h3 {
     font-size: 24px;
     color: var(--dark);
     background-color: var(--aqua);
 }
 
+   /* hover effects for each project button link */
+.vtproject:hover, 
+.project1:hover, 
+.project2:hover, 
+.project3:hover, 
+.project4:hover {
+    opacity: 50%;
+    color: var(--accent);
+    border: 5px solid var(--blue);
+}
+
+   /* background picutre linked to each project */
+.vtproject {
+    width: 87%;
+    background-image: url("../images/refractorproject.jpg");
+  }
+
+.project1 {
+    background-image: url("../images/java.JPG");
+    
+}
+
+.project2 {
+    background-image: url("../images/fil.png");
+}
+
+.project3 {
+    background-image: url("../images/placeholder.gif");
+}
+
+.project4 {
+    background-image: url("../images/placeholder2.gif");
+}
+
+   /* contact me and footer positioning and sizing */
 .contactme {
    display: flex;
    flex-direction: column;
@@ -244,6 +196,10 @@ h1 {
     font-weight: bold;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.contactme h2 {
+    margin-left: 20px;
 }
 
 .footer {
@@ -255,6 +211,7 @@ h1 {
     width: 100%;
 }
 
+   /* Settings for when screen hits 750px for good responsiveness */
 @media screen and (max-width:750px) {
     .projectstop, .projectsbottom {
        flex-direction: column;
