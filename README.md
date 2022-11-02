@@ -20,7 +20,7 @@
 
 ## Usage
 
-Link: https://github.com/IsaacFalcon/IsaacFalconPortfolio.git
+Link: https://isaacfalcon.github.io/IsaacFalconPortfolio/
 
 ![alt Website Screenshot](assets/images/preview.JPG)
 
