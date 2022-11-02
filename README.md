@@ -20,7 +20,7 @@
 
 ## Usage
 
-Link: https://isaacfalcon.github.io/HomeworkModule2Challenge/
+Link: https://github.com/IsaacFalcon/IsaacFalconPortfolio.git
 
 ![alt Website Screenshot](assets/images/preview.JPG)
 
